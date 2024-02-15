@@ -1,0 +1,51 @@
+@import './../../utilities/global.scss';
+
+.header {
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 60px;
+    padding-top: 30px;
+
+    .menu {
+    display: flex;
+    gap: 57px;
+    }
+
+    &__link {
+    color: $main-color;
+    font-size: $nav-header;
+    }
+
+    .active {
+        text-decoration: underline;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .header {
+        margin: 20px 0px;
+        padding: 0px 20px 0px 20px;
+
+        &__link {
+            font-size: 12px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .logo {
+            height: 4vh;
+        }
+    
+        .menu {
+            display: flex;
+            gap: 26px;
+            text-transform: uppercase;
+        }
+    }
+}
