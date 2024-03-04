@@ -1,0 +1,19 @@
+@import './../../utilities/global.scss';
+
+.home {
+    // margin: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+
+}
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .mainHome {
+        margin: 27px 20px 27px 20px;
+        gap: 22px;
+    }
+}
