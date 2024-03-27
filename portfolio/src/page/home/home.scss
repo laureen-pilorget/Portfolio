@@ -5,8 +5,54 @@
     display: flex;
     flex-direction: column;
     gap: 45px;
-
+    &__skills {
+        display: grid;
+    }
 }
+.skill {
+    display: grid;
+    grid-template-columns: 340px 340px 340px;
+    justify-content: space-between;
+    padding: 50px 50px;
+    &__frontend,
+    &__backend,
+    &__tools{
+        display: grid;
+        font-size: $title;
+        color: rgba(255,188,213,1);
+        justify-self: center;
+        &__title {
+            justify-self: center;
+        }
+    }
+    &__content{
+        display: grid;
+        padding-top: 50px;
+        gap: 20px;
+        &__frontend {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            padding-top: 50px;
+            gap: 20px;
+            justify-content: center;
+        }
+        &__backend {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            padding-top: 50px;
+            gap: 20px;
+            justify-content: center;
+        }
+        &__tools {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            padding-top: 50px;
+            gap: 20px;
+            justify-content: center;
+        }
+    } 
+}
+
 
 // MEDIA QUERIES //
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import './header.scss';
 import { NavLink } from 'react-router-dom';
 
@@ -8,12 +8,12 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
     return(
         <header className='header'>
-            <FontAwesomeIcon icon={faArrowUp} size='2x'/>
+            <FontAwesomeIcon icon={faChevronUp} className='header__icon'/>
             <nav className='menu'>
-                <NavLink to='/'className='header__link'>About</NavLink>
-                <NavLink to='/About'className='header__link'>Skills</NavLink>
-                <NavLink to='/About'className='header__link'>Projects</NavLink>
-                <NavLink to='/About'className='header__link'>Networks and contact</NavLink>
+                <NavLink to='/About'className='header__link'>About</NavLink>
+                <NavLink to='/Skills'className='header__link'>Skills</NavLink>
+                <NavLink to='/Projects'className='header__link'>Projects</NavLink>
+                <NavLink to='/Networks'className='header__link'>Networks and contact</NavLink>
             </nav>
         </header>
     )

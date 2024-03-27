@@ -1,0 +1,17 @@
+@import './../../utilities/global.scss';
+
+.skills {
+    color: $main-color;
+    &__text {
+        display: grid;
+        font-size: $nav-header;
+        color: rgba(205,180,219,1);
+        justify-content: center;
+
+    }
+    &__icon {
+        display: grid;
+        font-size: 50px;
+        justify-content: center;
+    }
+}
