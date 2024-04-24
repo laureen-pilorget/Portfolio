@@ -1,0 +1,32 @@
+@import './../../../utilities/global.scss';
+
+.allNetworks {
+    color: $main-color;
+    font-size: $text;
+    display: flex;
+    // justify-content: center;
+    gap: 15px;
+    &__icon {
+        font-size: $title;
+    }
+    &__text {
+        align-content: center;
+        font-size: $text;
+
+        // 
+        // gap: 30px;
+        // padding-left: 50px;
+    }
+    // &__text {
+    //     display: grid;
+    //     font-size: $nav-header;
+    //     color: rgba(205,180,219,1);
+    //     justify-content: center;
+
+    // }
+    // &__icon {
+    //     display: grid;
+    //     font-size: 50px;
+    //     justify-content: center;
+    // }
+}

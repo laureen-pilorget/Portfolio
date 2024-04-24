@@ -8,6 +8,42 @@
     &__skills {
         display: grid;
     }
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        .networkAndContact {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 300px;
+            .network,
+            .contact {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                &__title {
+                font-size: $title;
+                color: $main-color;
+                }
+                // &__text {
+                //     display: flex;
+                //     gap: 30px;
+                //     padding-left: 50px;
+                //     font-size: $text;
+                // }
+                // .networks {
+                //     display: flex;
+                //     flex-direction: column;
+                //     gap: 30px;
+                // }
+                .icon {
+                    font-size: $title;
+                }
+                .email {
+                    align-content: center;
+                }
+            }
+        }
+    }
 }
 .skill {
     display: grid;
@@ -20,7 +56,6 @@
         display: grid;
         font-size: $title;
         color: rgba(255,188,213,1);
-        justify-self: center;
         &__title {
             justify-self: center;
         }
@@ -34,14 +69,14 @@
             grid-template-columns: 100px 100px 100px;
             padding-top: 50px;
             gap: 20px;
-            justify-content: center;
+            // justify-content: center;
         }
         &__backend {
             display: grid;
             grid-template-columns: 100px 100px 100px;
             padding-top: 50px;
             gap: 20px;
-            justify-content: center;
+            // justify-content: center;
         }
         &__tools {
             display: grid;
@@ -50,8 +85,14 @@
             gap: 20px;
             justify-content: center;
         }
+
     } 
+    .titleIcon {
+        color: $main-color;
+        padding-left: 20px;
+    }
 }
+
 
 
 // MEDIA QUERIES //

@@ -3,10 +3,11 @@ import Banner from './../../components/banner/banner';
 import About from './../../components/about/about';
 import img from './../../assets/photo_profil.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faWindowMaximize, faServer, faDatabase, faScrewdriverWrench, faTerminal } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact, faSass, faNode, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faWindowMaximize, faServer, faScrewdriverWrench, faTerminal, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faSass, faNode, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import Skills from '../../components/skills/skills';
 import CardsBox from './../../components/cards-container/cards-box/cards-box';
+import NetworksBox from '../../components/networks-container/networks-box/networks-box';
 import './home.scss';
 
 const frontendArray = [
@@ -62,6 +63,7 @@ const toolsArray = [
     }
 ]
 
+
 const Home = () => {
     return(
         <main className='home'>
@@ -84,7 +86,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className='skill__backend'>
-                        <p className='skill__backend__title'>Back-End <FontAwesomeIcon icon={faServer} className='titleIcon'/> <FontAwesomeIcon icon={faDatabase} /></p>
+                        <p className='skill__backend__title'>Back-End <FontAwesomeIcon className='titleIcon' icon={faServer} /></p>
                         <div className='skill__content__backend'>
                             {backendArray.map((data,index) =>(
                                 // On récupère le titre et le texte pour chaque collaps
@@ -104,11 +106,28 @@ const Home = () => {
                 </div>
             </section>
             <section className='home__projects'>
-                
+            <Banner bannerText='Mes projets'/>
+            {/* <CardsBox/> */}
             </section>
             {/* <section className='home__cardsBox'>
                 <CardsBox />
             </section> */}
+            <section className='home__contact'>
+                <Banner bannerText={'Contact et réseaux'}/>
+                <div className='networkAndContact'>
+                    <div className='network'>
+                        <p className='network__title'>Retrouvez-moi sur ces plateformes</p>
+                        <NetworksBox/>
+                    </div>
+                    <div className="contact">
+                        <p className='contact__title'>N'hésitez pas à me contacter</p>
+                        <div className='contact__text'>
+                            <p><FontAwesomeIcon icon={faEnvelope} className='icon'/></p>
+                            <p className='email'>laureen.pilorget@laposte.net</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
