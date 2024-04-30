@@ -2,14 +2,12 @@
 
 .footer {
     display : flex;
-    align-items: center;
     flex-direction: column;
-    background: rgb(205,180,219);
+    height: 100px;
+    align-items: center;
+    justify-content: center;
     background: linear-gradient(90deg, rgba(205,180,219,1) 0%, rgba(255,188,213,1) 35%, rgba(162,210,255,1) 100%);
     color: $second-color;
-    gap: 28px;
-    padding-top: 66px;
-    padding-bottom: 29px;
 
     .reserved {
         color: $second-color;

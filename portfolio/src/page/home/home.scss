@@ -2,6 +2,7 @@
 
 .home {
     // margin: 0px 0px 50px 0px;
+    padding-top: 50px;
     display: flex;
     flex-direction: column;
     gap: 45px;
@@ -13,8 +14,8 @@
         flex-direction: column;
         .networkAndContact {
             display: flex;
-            justify-content: space-between;
-            padding: 50px 300px;
+            justify-content: space-around;
+            padding: 50px 50px;
             .network,
             .contact {
                 display: flex;
@@ -24,22 +25,26 @@
                 font-size: $title;
                 color: $main-color;
                 }
-                // &__text {
-                //     display: flex;
-                //     gap: 30px;
-                //     padding-left: 50px;
-                //     font-size: $text;
-                // }
-                // .networks {
-                //     display: flex;
-                //     flex-direction: column;
-                //     gap: 30px;
-                // }
+                &__text {
+                    display: flex;
+                    gap: 30px;
+                    justify-content: center;
+                    font-size: $text;
+                }
+                .networks {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                }
                 .icon {
                     font-size: $title;
                 }
                 .email {
                     align-content: center;
+                }
+                .email:hover {
+                    text-decoration: underline;
+                    cursor: pointer;
                 }
             }
         }

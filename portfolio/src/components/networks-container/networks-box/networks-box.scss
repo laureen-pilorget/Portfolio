@@ -1,16 +1,20 @@
 @import './../../../utilities/global.scss';
 
-.networks {
+.link {
     display: flex;
-    flex-direction: column;
-    
-    // width: 25%;
-    gap: 20px;
-    .link {
-        display: grid;
-        grid-template-columns: 100px;
-        grid-template-rows: 100px 100px;
-        width: fit-content;
-        justify-items: center;
-    }
+    justify-content: center;
 }
+// .networks {
+//     display: flex;
+//     flex-direction: column;
+    
+//     // width: 25%;
+//     gap: 20px;
+//     .link {
+//         display: grid;
+//         grid-template-columns: 100px;
+//         grid-template-rows: 100px 100px;
+//         width: fit-content;
+//         justify-items: center;
+//     }
+// }
