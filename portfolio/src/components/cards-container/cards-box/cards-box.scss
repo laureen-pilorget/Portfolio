@@ -1,0 +1,26 @@
+@import './../../../utilities/global.scss';
+
+
+@import './../../../utilities/global.scss';
+
+.sectionCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 56px 50px 43px 50px;
+    row-gap: 60px;
+    column-gap: 60px;
+}
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+    .sectionCards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background: none;
+        gap: 20px;
+        justify-content: center;
+        padding: 0px;
+    }
+}

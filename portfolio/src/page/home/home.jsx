@@ -4,7 +4,7 @@ import About from './../../components/about/about';
 import img from './../../assets/photo_profil.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowMaximize, faServer, faScrewdriverWrench, faTerminal, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5, faCss3Alt, faJs, faReact, faSass, faNode, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faHtml5, faCss3Alt, faJs, faReact, faSass, faNode, faGithub } from '@fortawesome/free-brands-svg-icons';
 import Skills from '../../components/skills/skills';
 import CardsBox from './../../components/cards-container/cards-box/cards-box';
 import NetworksBox from '../../components/networks-container/networks-box/networks-box';
@@ -108,7 +108,7 @@ const Home = () => {
             </section>
             <section className='home__projects' id='projects'>
             <Banner bannerText='Mes projets'/>
-            {/* <CardsBox className='home__cardsBox'/> */}
+            <CardsBox className='home__cardsBox'/>
             </section>
             <section className='home__contact' id='networks'>
                 <Banner bannerText={'Contact et réseaux'}/>
