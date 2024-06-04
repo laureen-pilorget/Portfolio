@@ -8,7 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 60px;
-    background-color: white;
+    background: rgba(4,4,4,0.3);
 
     .menu {
     display: flex;
@@ -16,13 +16,22 @@
     }
 
     &__link {
-    color: $main-color;
+    color: whitesmoke;
     font-size: $nav-header;
+    }
+
+    &__link:hover {
+        font-size: $title;
+        text-shadow: 1px 1px 3px rgb(255, 188, 213);
+    }
+    
+    &__icon:hover {
+        font-size: 20px;
     }
 
     &__icon {
         height: 1.7em;
-        color: $main-color;
+        color: whitesmoke;
     }
 
     .active {
