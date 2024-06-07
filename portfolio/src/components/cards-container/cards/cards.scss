@@ -1,11 +1,14 @@
 @import './../../../utilities/global.scss';
 
+body.active-modal {
+    overflow-y: hidden;
+}
 
 .card {
     height: 340px;
     position: relative;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: $main-radius;
 
     &__filter{
         position: absolute;

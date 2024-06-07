@@ -15,6 +15,12 @@ const Card = ({ cardImg, cardTitle, modalImg, modalTitle, modalText }) => {
       setIsModalOpen(false);
     };
 
+    if(isModalOpen) {
+      document.body.classList.add('active-modal')
+    } else {
+      document.body.classList.remove('active-modal')
+    }
+
     return (
       <div className='center'>
         <div onClick={handleOpenModal} className='card'>

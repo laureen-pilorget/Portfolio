@@ -16,63 +16,63 @@ const Cards = [
 		"title": "To Do List",
 		"cover": toDoList,
     "img": toDoList,
-    "description": ""
+    "description": "Création d'une to do list en Javascript"
 	},
   {
     "id": "2",
 		"title": "Robbie Lens",
 		"cover": robbie,
     "img": robbie,
-    "description": ""
+    "description": "Création du site vitrine d'une photographe en HTML & CSS"
 	},
   {
     "id": "3",
 		"title": "Booki",
 		"cover": booki,
     "img": booki,
-    "description": ""
+    "description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS"
   },
   {
     "id": "4",
 		"title": "Sophie Bluel",
 		"cover": sophie,
     "img": sophie,
-    "description": ""
+    "description": "Création d'une page web dynamique avec JavaScript"
   },
   {
     "id": "5",
 		"title": "Qwenta",
 		"cover": qwenta,
     "img": qwenta,
-    "description": ""
+    "description": "Planification du développement d'un site client"
   },
   {
     "id": "6",
 		"title": "Nina Carducci",
 		"cover": nina,
     "img": nina,
-    "description": ""
+    "description": "Débogage et optimisation d'un site de photographe"
   },
   {
     "id": "7",
 		"title": "Kasa",
 		"cover": kasa,
     "img": kasa,
-    "description": ""
+    "description": "Création d'une application web de location immobilière avec React"
   },
   {
     "id": "8",
 		"title": "Mon Vieux Grimoire",
 		"cover": "..",
     "img": "..",
-    "description": ""
+    "description": "Développement du back-end d'un site de notation de livres"
   },
   {
     "id": "9",
 		"title": "Mon Portfolio",
 		"cover": "..",
     "img": "..",
-    "description": ""
+    "description": "Création de mon portfolio"
   }
 ]
 
